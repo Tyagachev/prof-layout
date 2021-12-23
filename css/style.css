@@ -6,6 +6,10 @@
     --white-color: #FBFBFB;
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     font-family: 'lato';
     font-style: normal;
@@ -30,10 +34,6 @@ body {
 	height: 1px !important; 
 	width: 1px !important; 
 	overflow: hidden;
-}
-
-.header__nav {
-    display:none;
 }
 
 .header {
@@ -66,6 +66,10 @@ body {
 .header__menu-btn {
     border: 1px solid;
     background-color: transparent;
+}
+
+.header__nav {
+    display:none;
 }
 
 .brand {
