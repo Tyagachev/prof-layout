@@ -26,7 +26,7 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 .visually-hidden {
@@ -88,6 +88,31 @@ body {
     display:none;
 }
 
+/*-------Затемнение Brand---------*/
+
+.brand__overlay {
+    position: relative;
+    display: flex;
+    min-width: 100%;
+}
+
+.brand__overlay:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        min-height: 260px;
+        background: #211616;
+        position: absolute;
+        top: 0;
+        display: none;
+        opacity: 70%;   
+}
+
+.brand:hover .brand__overlay:before {
+    display: block;
+} 
+/*----------------*/
+
 .brand {
     display: flex;
 }
@@ -137,6 +162,7 @@ body {
     justify-content: center;
     /*border: 1px solid gold;*/
     flex-direction: column;
+
 }
 
 
@@ -149,6 +175,8 @@ body {
 
 .sales__item--woman {
     background-image: url(../img/for-women.jpg);
+
+
 }
 
 .sales__item--men {
@@ -161,7 +189,7 @@ body {
 
 .sales__item--shoes {
     width: 100%;
-    margin: 30px 0 97px 0;
+    margin: 30px 0 0 0;
     background-image: url(../img/acces.jpg);
     background-repeat: no-repeat;
 }
@@ -177,7 +205,57 @@ body {
     line-height: 29px;
     text-transform: uppercase;
     color: var(--pink-color);
+    padding: 0 0 56px 0;
 }
+/*-------Затемнение Sales---------*/
+
+.sales__cart-overlay {
+    position: relative;
+}
+
+.sales__cart-shoes-overlay {
+    position: relative;
+}
+
+.sales__cart-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 260px;
+    background: #211616;
+    position: absolute;
+    top: 0;
+    display: none;
+    opacity: 70%;
+}
+
+.sales__cart:hover .sales__cart-overlay:before {
+    display: block;
+} 
+
+.sales__cart-shoes {
+    width: 100%;
+}
+
+.sales__cart-shoes-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 180px;
+    background: #211616;
+    position: absolute;
+    top: 0;
+    display: none;
+    opacity: 70%;
+}
+
+.sales__cart-shoes:hover .sales__cart-shoes-overlay:before {
+    display: block;
+} 
+
+.sales__cart-shoes:hover .shoes__text {
+    display: block;
+}
+
+/*----------------*/
 
 .products {
     display: flex;
@@ -212,7 +290,7 @@ body {
     position: relative;
 }
 
-/*Начало затемнения--------*/
+/*Затемнение Products--------*/
 
 .products__item-wrapper {
     position: relative;
@@ -262,7 +340,7 @@ body {
     outline: 1px solid azure;
 }
 
-/*----------Конец затемнения*/
+/*---------------------------------*/
 
 .products__item-img {
     margin: 0 0 25px 0;
@@ -360,7 +438,7 @@ body {
     justify-content: space-between;
 }
 
-.footer_p {
+.footer__img-person {
     border-radius: 50%;
 }
 
@@ -449,11 +527,128 @@ form{
 background-color: transparent;
 }
 
-.footer__social-item:hover .s-icon {
+.footer__social-item:hover .footer__social-icon {
     fill: #F16D7F;
 }
 
-.s-icon {
+.footer__social-icon {
     fill: var(--white-color);
+    
 }
 
+/*Registration*/
+
+.reg {
+    height: 148px;
+    background-color:#F8F3F4;
+    display: flex;
+}
+
+.reg__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0 0 0 ;
+}
+
+.field__title {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    padding: 0 0 0 0;
+}
+.field__input {
+    min-width: 360px;
+    height: 45px;
+    padding: 0 0 0 16px;
+    margin: 20px 125px 0 0;
+    border-color: #B1B1B1;
+}
+
+.field__radio {
+    display: flex;
+    padding: 34px 0 34px 0;
+}
+
+.field__form {
+    display: block;
+}
+
+.field__radio-label {
+    padding: 0 20px 0 0;
+}
+
+.field__text {
+    max-width: 360px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    margin: 15px 0 39px 0;
+    color:#B1B1B1;
+    ;
+}
+
+.field__btn {
+    width: 167px;
+    height: 50px;
+    margin: 0 0 96px 0;
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    border: none;
+}
+
+.field__btn::after{
+    content: "\2192";
+    font-size: 20px;
+    padding: 0 0 0 20px;
+}
+
+.field__btn:hover {
+    background-color: var(--gray-color)
+}
+
+.field__item {
+    position: relative;
+    padding: 0 0 27px 25px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.field__item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/chek.svg);
+    background-size: 16px 16px;
+    left: -20px;
+}
+
+.field__list-title{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.field__list-subtitle {
+    max-width: 720px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    padding: 22px 0 27px 0;
+}
+
+.field__list {
+    margin: 0 0 0 15px;
+}
