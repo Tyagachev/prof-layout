@@ -556,16 +556,16 @@ background-color: transparent;
 .field {
     display: flex;
     justify-content: space-between;
-    padding: 64px 0 0 0 ;
+    padding: 64px 0 0 0;
 }
 
 .field__title {
-    font-family: Lato;
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
     padding: 0 0 0 0;
 }
+
 .field__input {
     min-width: 360px;
     height: 45px;
@@ -594,7 +594,6 @@ background-color: transparent;
     line-height: 16px;
     margin: 15px 0 39px 0;
     color:#B1B1B1;
-    ;
 }
 
 .field__btn {
@@ -614,7 +613,7 @@ background-color: transparent;
 }
 
 .field__btn:hover {
-    background-color: var(--gray-color)
+    background-color: var(--gray-color);
 }
 
 .field__item {
