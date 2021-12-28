@@ -6,6 +6,10 @@
     --white-color: #FBFBFB;
 }
 
+label, input {
+    display: block;
+}
+
 ul {
     list-style: none;
 }
@@ -22,7 +26,7 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
-    /* border: 1px solid green;*/
+    /*border: 1px solid green;*/
 }
 
 .visually-hidden {
@@ -64,13 +68,50 @@ body {
 }
 
 .header__menu-btn {
-    border: 1px solid;
+    border: none;
     background-color: transparent;
+}
+
+.header__menu-btn:hover .white-icon {
+    fill: red;
+}
+
+.header__menu-btn:active {
+    outline: 1px solid azure;
+}
+
+.white-icon {
+    fill: azure;
 }
 
 .header__nav {
     display:none;
 }
+
+/*-------Затемнение Brand---------*/
+
+.brand__overlay {
+    position: relative;
+    display: flex;
+    min-width: 100%;
+}
+
+.brand__overlay:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        min-height: 260px;
+        background: #211616;
+        position: absolute;
+        top: 0;
+        display: none;
+        opacity: 70%;   
+}
+
+.brand:hover .brand__overlay:before {
+    display: block;
+} 
+/*----------------*/
 
 .brand {
     display: flex;
@@ -89,6 +130,16 @@ body {
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+    position: relative;
+}
+
+.brand__title::before{
+    content: "";
+    background-color: var(--pink-color);
+    position: absolute;
+    width: 12px;
+    height: 92px;
+    left: -16px;
 }
 
 .brand__subtitle {
@@ -97,6 +148,7 @@ body {
     line-height: 38px;
     display: block;
 }
+
 
 .brand__subtitle-pink {
     color: var(--pink-color);
@@ -110,7 +162,9 @@ body {
     justify-content: center;
     /*border: 1px solid gold;*/
     flex-direction: column;
+
 }
+
 
 .sales__list {
     margin: 64px 0 0 0;
@@ -121,8 +175,9 @@ body {
 
 .sales__item--woman {
     background-image: url(../img/for-women.jpg);
-}
 
+
+}
 
 .sales__item--men {
     background-image: url(../img/for-men.jpg);
@@ -134,7 +189,7 @@ body {
 
 .sales__item--shoes {
     width: 100%;
-    margin: 30px 0 97px 0;
+    margin: 30px 0 0 0;
     background-image: url(../img/acces.jpg);
     background-repeat: no-repeat;
 }
@@ -150,7 +205,57 @@ body {
     line-height: 29px;
     text-transform: uppercase;
     color: var(--pink-color);
+    padding: 0 0 56px 0;
 }
+/*-------Затемнение Sales---------*/
+
+.sales__cart-overlay {
+    position: relative;
+}
+
+.sales__cart-shoes-overlay {
+    position: relative;
+}
+
+.sales__cart-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 260px;
+    background: #211616;
+    position: absolute;
+    top: 0;
+    display: none;
+    opacity: 70%;
+}
+
+.sales__cart:hover .sales__cart-overlay:before {
+    display: block;
+} 
+
+.sales__cart-shoes {
+    width: 100%;
+}
+
+.sales__cart-shoes-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 180px;
+    background: #211616;
+    position: absolute;
+    top: 0;
+    display: none;
+    opacity: 70%;
+}
+
+.sales__cart-shoes:hover .sales__cart-shoes-overlay:before {
+    display: block;
+} 
+
+.sales__cart-shoes:hover .shoes__text {
+    display: block;
+}
+
+/*----------------*/
 
 .products {
     display: flex;
@@ -182,7 +287,60 @@ body {
     width: 360px;
     background-color:#F8F8F8;
     margin: 30px 0 0 0;
+    position: relative;
 }
+
+/*Затемнение Products--------*/
+
+.products__item-wrapper {
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+}
+
+.overlay,
+.products__button {
+    display: none;
+}
+
+.products__button {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 13px  13px;
+}
+
+.products__button-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    align-self: center;
+    padding: 0 0 0 11px;
+    text-decoration: none;
+}
+
+.products__item:hover .products__button {
+    display: flex;
+}
+.products__item:hover .overlay {
+    display: block;
+} 
+
+.products__button:active {
+    outline: 1px solid azure;
+}
+
+/*---------------------------------*/
 
 .products__item-img {
     margin: 0 0 25px 0;
@@ -230,7 +388,7 @@ body {
 
 .service__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .service__item {
@@ -260,5 +418,236 @@ body {
     text-align: center;
 }
 
+.footer { 
+    background-image: url(../img/footer_back.png);
+    height:448px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.footer__img {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 86px 0 0 0;
+}
+
+.footer__wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__img-person {
+    border-radius: 50%;
+}
+
+blockquote {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 53px 0 0 0;
+}
+
+form{
+    display: flex;
+}
 
 
+.footer__form {
+    padding: 150px 80px 0 0;
+}
+
+.footer__form-text {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer__form-input {
+    border-radius: 200px 0px 0px 200px;
+    background-color:#E1E1E1;
+    height: 49px;
+    width: 322px;
+    padding: 0 0 0 22px;
+    border: none;
+    margin: 32px 0 0 0;
+}
+
+.footer__form-btn {
+    border-radius: 0px 200px 200px 0px;
+    background-color: #F16D7F;
+    color: #fff;
+    width: 100px;
+    height: 49px;
+    border: none;
+    margin: 32px 0 0 0;
+}
+
+.footer__form-btn:hover {
+    background-color: var(--gray-color)
+}
+
+.footer__social {
+    background-color: var(--black);
+    height: 80px;
+    margin: 126px auto;
+}
+
+.footer__social-wrp {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer__social-brand {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    align-self: center;
+}
+
+.footer__social-list {
+    display: flex;
+    align-self: center;
+
+}
+
+.footer__social-item {
+    padding: 0 7px 0 0;
+}
+
+.footer__social-item {
+background-color: transparent;
+}
+
+.footer__social-item:hover .footer__social-icon {
+    fill: #F16D7F;
+}
+
+.footer__social-icon {
+    fill: var(--white-color);
+    
+}
+
+/*Registration*/
+
+.reg {
+    height: 148px;
+    background-color:#F8F3F4;
+    display: flex;
+}
+
+.reg__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0 0 0;
+}
+
+.field__title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    padding: 0 0 0 0;
+}
+
+.field__input {
+    min-width: 360px;
+    height: 45px;
+    padding: 0 0 0 16px;
+    margin: 20px 125px 0 0;
+    border-color: #B1B1B1;
+}
+
+.field__radio {
+    display: flex;
+    padding: 34px 0 34px 0;
+}
+
+.field__form {
+    display: block;
+}
+
+.field__radio-label {
+    padding: 0 20px 0 0;
+}
+
+.field__text {
+    max-width: 360px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    margin: 15px 0 39px 0;
+    color:#B1B1B1;
+}
+
+.field__btn {
+    width: 167px;
+    height: 50px;
+    margin: 0 0 96px 0;
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    border: none;
+}
+
+.field__btn::after{
+    content: "\2192";
+    font-size: 20px;
+    padding: 0 0 0 20px;
+}
+
+.field__btn:hover {
+    background-color: var(--gray-color);
+}
+
+.field__item {
+    position: relative;
+    padding: 0 0 27px 25px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.field__item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/chek.svg);
+    background-size: 16px 16px;
+    left: -20px;
+}
+
+.field__list-title{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.field__list-subtitle {
+    max-width: 720px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    padding: 22px 0 27px 0;
+}
+
+.field__list {
+    margin: 0 0 0 15px;
+}
