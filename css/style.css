@@ -74,8 +74,8 @@ body {
 }
 
 .header__search-form {
-    margin: 0 0 0 15px;
-    height: 28px;
+    margin: 0 0 0 5px;
+    height: 40px;
 }
 
 .header__search-img {
@@ -94,24 +94,6 @@ body {
 
 .products__button:hover {
     color: red;
-}
-
-.products__button:hover .white-icon,
-.header__search-btn:hover .white-icon,
-.header__search-btn:hover .white-icon,
-.header__menu-btn:hover .white-icon,
-.header__link-reg:hover .white-icon,
-.header__link-basket:hover .white-icon {
-    fill: red;
-}
-
-.products__link:active,
-.products__button:active,
-.header__search-btn:active,
-.header__menu-btn:active,
-.header__link-reg:active,
-.header__link-basket:active {
-    outline: 1px solid azure;
 }
 
 .white-icon {
@@ -235,6 +217,9 @@ body {
     line-height: 29px;
     text-transform: uppercase;
     color: var(--pink-color);
+}
+
+.sales__item-text--shoes {
     padding: 0 0 56px 0;
 }
 
@@ -508,6 +493,14 @@ form{
     text-transform: uppercase;
 }
 
+.footer__form-subtext {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .footer__form-input {
     border-radius: 200px 0px 0px 200px;
     background-color:#E1E1E1;
@@ -687,4 +680,57 @@ form{
 
 .field__list {
     margin: 0 0 0 15px;
+}
+
+/*----------hover,active,focus----------*/
+
+.products__button:hover .white-icon,
+.header__search-btn:hover .white-icon,
+.header__search-btn:hover .white-icon,
+.header__menu-btn:hover .white-icon,
+.header__link-reg:hover .white-icon,
+.header__link-basket:hover .white-icon {
+    fill: red;
+}
+
+.footer__social-icon:active,
+.products__link:active,
+.products__button:active,
+.header__search-btn:active,
+.header__menu-btn:active,
+.header__link-reg:active,
+.header__link-basket:active {
+    outline: 1px solid azure;
+}
+
+[type="email"] {
+    display: block;
+    box-sizing: border-box;
+}
+
+[type="field-email"],
+[type="last-name"],
+[type="first-name"],
+[type="password"] {
+    display: block;  
+    outline: 1px solid;
+    background: transparent;
+    box-sizing: border-box;
+    border: none;
+    opacity: 0.5;
+}
+
+[type="search"]:hover,
+[type="search"]:focus,
+[type="field-email"]:hover,
+[type="field-email"]:focus,
+[type="last-name"]:hover,
+[type="last-name"]:focus,
+[type="first-name"]:hover,
+[type="first-name"]:focus,
+[type="password"]:hover,
+[type="password"]:focus,
+[type="email"]:hover,
+[type="email"]:focus {
+    outline: 0.5px solid red;
 }
