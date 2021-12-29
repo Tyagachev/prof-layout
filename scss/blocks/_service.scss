@@ -1,0 +1,40 @@
+.service {
+    margin: 95px 0 0 0;
+    background-color: $black;
+    min-height: 341px;
+    display: flex;
+    align-items: center;
+}
+
+.service__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__item {
+    width: 360px;
+}
+
+.service__item-img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.service__item-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 28px 0 0 0;
+    color: $white-color;
+    text-align: center;
+}
+
+.service__item-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 28px 0 0 0;
+    color: $white-color;
+    padding: 16px 0 0 0;
+    text-align: center;
+}
