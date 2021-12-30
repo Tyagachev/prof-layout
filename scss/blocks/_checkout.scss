@@ -1,0 +1,30 @@
+.checkout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout__list {
+    width: 652px;
+}
+
+.checkout__item {
+    display: flex;
+    margin: 0 0 40px 0;
+    box-shadow: 13px 13px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.checkout__title {
+    width: 200px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding: 22px 0 42px 32px;
+}
+
+.checkout__subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 0 0 6px 32px;
+}

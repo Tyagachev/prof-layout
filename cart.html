@@ -141,9 +141,60 @@
     <!--Main-->
 
     <main>
-        <section class="reg">
-            <h1 class="reg__title container">shoping cart</h1>
+        <section class="cart">
+            <h1 class="cart__title container">shoping cart</h1>
         </section>
+
+        <section class="checkout container">
+            <ul class="checkout__list">
+                <li class="checkout__item">
+                    <img src="./img/product-8.jpg" alt="product-8">
+                    <div class="checkout__text-wrp">
+                    <h3 class="checkout__title">mango people t-shirt</h3>
+                    <p class="checkout__subtitle">Price:<span  class="checkout__subtitle-price"> $300</span></p>
+                    <p class="checkout__subtitle">Color: Red</p>
+                    <p class="checkout__subtitle">Size: XI</p>
+                    <p class="checkout__subtitle">Quantity:<span class="checkout__subtitle-number">2</span></p>
+                </div>
+                </li>
+
+                <li class="checkout__item">
+                    <img src="./img/product-7.jpg" alt="product-7">
+                    <div class="checkout__text-wrp">
+                    <h3 class="checkout__title">mango people t-shirt</h3>
+                    <p class="checkout__subtitle">Price:<span  class="checkout__subtitle-price"> $300</span></p>
+                    <p class="checkout__subtitle">Color: Red</p>
+                    <p class="checkout__subtitle">Size: XI</p>
+                    <p class="checkout__subtitle">Quantity:<span class="checkout__subtitle-number">2</span></p>
+                    </div>
+                </li>
+            </ul>
+
+            <div>
+                <fieldset>
+                    <legend class="checkout__field-title">shipping adress</legend>
+                    <input class="checkout__field-input" id="first-name" type="first-name" required placeholder="Adress">
+                    <label class="visually-hidden" for="first-name">First Name</label>
+                    <input class="checkout__field-input" id="last-name" type="last-name" required placeholder="State">
+                    <label class="visually-hidden" for="last-name">Last Name</label>
+                    <input class="checkout__field-input" id="last-name" type="last-name" required placeholder="Postcode / Zip">
+                    <label class="visually-hidden" for="last-name">Last Name</label>
+                </fieldset>
+                <button class="checkout__field-btn" type="submit">get a quote</button>
+
+                <ul class="checkout__total-list">
+                <li><p class="checkout__sub-total">sub total $900</p></li>
+                <li><p class="checkout__grand-total">grand total<span class="checkout__total-price">$900</span></p></li>
+                <hr>
+                <li class="checkout__item-btn"><button class="checkout__proceed-btn" type="submit">proceed to checkout</button></li>
+            </ul>
+            <div>
+        </section>
+        
+        <div class="container" >
+            <button class="checkout__field-btn" type="submit">get a quote</button>
+            <button class="checkout__field-btn" type="submit">get a quote</button>
+        </div>
     </main>
 
     <!--Footer-->
