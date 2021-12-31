@@ -8,9 +8,28 @@
 }
 
 .checkout__item {
+    position: relative;
     display: flex;
     margin: 0 0 40px 0;
     box-shadow: 13px 13px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.checkout__item-close {
+    position: absolute;
+    color: $gray-color;
+    content: '';
+    width: 18px;
+    height: 18px;
+    right: 30px;
+    top: 30px;
+}
+
+.checkout__item-close:hover {
+    fill: red;
+}
+
+.checkout__item-close:active {
+    outline: 0.5px solid $gray-color;
 }
 
 .checkout__title {

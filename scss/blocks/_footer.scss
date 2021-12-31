@@ -66,6 +66,10 @@
     background-color: $gray-color;
 }
 
+.footer__form-btn:active {
+    outline: 2px solid $gray-color;
+}
+
 .footer__social {
     background-color: $black;
     height: 80px;

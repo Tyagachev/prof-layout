@@ -1,3 +1,7 @@
+.checkout__form{
+    display: block;
+}
+
 .checkout__field-title {
     font-size: 16px;
     font-weight: 300;
@@ -12,6 +16,7 @@
     padding: 0 0 0 16px;
     margin: 20px 0 0 0;
     opacity: 0.7;
+    outline-color: $gray-color;
 }
 
 .checkout__subtitle {
@@ -29,7 +34,7 @@
 
 .checkout__subtitle-number {
     position: absolute;
-    margin: 0 0 0 40px;
+    color: $gray-color;
     width: 43px;
     height: 24px;
     left: 100px;
@@ -37,7 +42,8 @@
     font-size: 18px;
     text-align: center;
     display: block;
-    border: 1px solid $gray-color;
+    border: 1px solid;
+    margin: 0 0 0 40px;
 }
 
 .checkout__item-btn {
@@ -60,13 +66,37 @@
     background-color: $gray-color;
 }
 
+.checkout__proceed-btn:active {
+    outline: 2px solid $gray-color;
+}
+
 .checkout__field-btn {
     width: 100px;
     height: 34px;
+    border-width: 1px;
     font-size: 11px;
+    color: gray;
+    border-color:$gray-color;
     background-color: transparent;
     text-transform: uppercase;
     margin: 24px 0 0 0;
+}
+
+.checkout__field-btn-wrp {
+    display: flex;
+    justify-content: space-between;
+    max-width: 652px;
+    margin: 0 0 128px 0;
+}
+
+.checkout__field-btn-next {
+    width: 244px;
+    height: 49px;
+    border-width: 1px;
+    border-color:$gray-color;
+    text-transform: uppercase;
+    color: gray;
+    background-color: transparent;
 }
 
 .checkout__total-list {
