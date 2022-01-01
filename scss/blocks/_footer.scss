@@ -3,114 +3,119 @@
     height:448px;
     width: 100%;
     background-repeat: no-repeat;
-}
 
-.footer__img {
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 86px 0 0 0;
-}
 
-.footer__wrp {
-    display: flex;
-    justify-content: space-between;
-}
+    &__img {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 86px 0 0 0;
+    }
 
-.footer__img-person {
-    border-radius: 50%;
-}
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.footer__form {
-    padding: 150px 80px 0 0;
-}
+    &__img-person {
+        border-radius: 50%;
+    }
 
-.footer__form-text {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 38px;
-    text-align: center;
-    text-transform: uppercase;
-}
+    &__form {
+        padding: 150px 80px 0 0;
+    }
 
-.footer__form-subtext {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: center;
-    text-transform: uppercase;
-}
+    &__form-text {
+        @include font(24px,38px,700,normal);
+        //font-size: 24px;
+        //font-weight: 700;
+        //line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
 
-.footer__form-input {
-    border-radius: 200px 0px 0px 200px;
-    background-color:#E1E1E1;
-    height: 49px;
-    width: 322px;
-    padding: 0 0 0 22px;
-    border: none;
-    margin: 32px 0 0 0;
-}
+    }
 
-.footer__form-btn {
-    border-radius: 0px 200px 200px 0px;
-    background-color: $pink-color;
-    color: #fff;
-    width: 100px;
-    height: 49px;
-    border: none;
-    margin: 32px 0 0 0;
-}
+    &__form-subtext {
+        @include font(18px,22px,400,normal);
+        //font-size: 18px;
+        //font-weight: 400;
+        //line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+    }
 
-.footer__form-btn:hover {
-    background-color: $gray-color;
-}
+    &__form-input {
+        border-radius: 200px 0px 0px 200px;
+        background-color:#E1E1E1;
+        height: 49px;
+        width: 322px;
+        padding: 0 0 0 22px;
+        border: none;
+        margin: 32px 0 0 0;
+    }
 
-.footer__form-btn:active {
-    outline: 2px solid $gray-color;
-}
+    &__form-btn {
+        border-radius: 0px 200px 200px 0px;
+        background-color: $pink-color;
+        color: #fff;
+        width: 100px;
+        height: 49px;
+        border: none;
+        margin: 32px 0 0 0;
+    }
 
-.footer__social {
-    background-color: $black;
-    height: 80px;
-    margin: 126px auto;
-}
+    &__form-btn:hover {
+        background-color: $gray-color;
+    }
 
-.footer__social-wrp {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
+    &__form-btn:active {
+        outline: 2px solid $gray-color;
+    }
 
-.footer__social-brand {
-    color: $white-color;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    align-self: center;
-}
+    &__social {
+        background-color: $black;
+        height: 80px;
+        margin: 126px auto;
+    }
 
-.footer__social-list {
-    display: flex;
-    align-self: center;
-}
+    &__social-wrp {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
 
-.footer__social-item {
-    padding: 0 7px 0 0;
-}
+    &__social-brand {
+        @include font(16px,19px,400,normal);
+        color: $white-color;
+        //font-size: 16px;
+        //font-weight: 400;
+        //line-height: 19px;
+        align-self: center;
+    }
 
-.footer__social-item {
-    background-color: transparent;
-}
+    &__social-list {
+        display: flex;
+        align-self: center;
+    }
 
-.footer__social-item:hover .footer__social-icon {
-    fill: $pink-color;
-}
+    &__social-item {
+        padding: 0 7px 0 0;
+    }
 
-.footer__social-icon:active {
-    outline: 1px solid azure;
-}
+    &__social-item {
+        background-color: transparent;
+    }
 
-.footer__social-icon {
-    fill: $white-color;
+    &__social-item:hover .footer__social-icon {
+        fill: $pink-color;
+    }
+
+    &__social-icon:active {
+        outline: 1px solid azure;
+    }
+
+    &__social-icon {
+        fill: $white-color;
+    }
 }

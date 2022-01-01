@@ -115,16 +115,6 @@ body {
           align-items: center;
 }
 
-.header__link-reg {
-  text-decoration: none;
-  margin: 0 0 0 33px;
-}
-
-.header__link-basket {
-  text-decoration: none;
-  margin: 0 0 0 33px;
-}
-
 .header__wrp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,6 +131,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -153,15 +146,14 @@ body {
   margin: 0 0 0 41px;
 }
 
+.header__search-btn {
+  background: transparent;
+  border: none;
+}
+
 .header__search-form {
   margin: 0 0 0 5px;
   height: 40px;
-}
-
-.header__search-img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .header__menu-btn {
@@ -169,13 +161,22 @@ body {
   background-color: transparent;
 }
 
-.header__search-btn {
-  background: transparent;
-  border: none;
+.header__link-reg {
+  text-decoration: none;
+  margin: 0 0 0 33px;
+}
+
+.header__link-basket {
+  text-decoration: none;
+  margin: 0 0 0 33px;
 }
 
 .header__nav {
   display: none;
+}
+
+.white-icon {
+  fill: white;
 }
 
 .header__search-btn:hover .white-icon,
@@ -197,6 +198,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*-------Затемнение Brand---------*/
 }
 
 .brand__title-wrp {
@@ -215,8 +217,9 @@ body {
 
 .brand__title {
   font-size: 48px;
-  font-weight: 900;
   line-height: 58px;
+  font-weight: 900;
+  font-style: normal;
   text-transform: uppercase;
   position: relative;
 }
@@ -232,8 +235,9 @@ body {
 
 .brand__subtitle {
   font-size: 32px;
-  font-weight: 700;
   line-height: 38px;
+  font-weight: 700;
+  font-style: normal;
   display: block;
 }
 
@@ -241,7 +245,6 @@ body {
   color: #F09BA7;
 }
 
-/*-------Затемнение Brand---------*/
 .brand__overlay {
   position: relative;
   display: -webkit-box;
@@ -262,11 +265,15 @@ body {
   opacity: 70%;
 }
 
-.brand:hover .brand__overlay:before {
+.brand .brand:hover .brand__overlay:before {
   display: block;
 }
 
 /*----------------*/
+.sales {
+  /*-------Затемнение Sales---------*/
+}
+
 .sales__item {
   width: 360px;
   min-height: 260px;
@@ -324,8 +331,9 @@ body {
 
 .sales__item-text {
   font-size: 24px;
-  font-weight: 700;
   line-height: 29px;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   color: #F09BA7;
 }
@@ -334,7 +342,6 @@ body {
   padding: 0 0 56px 0;
 }
 
-/*-------Затемнение Sales---------*/
 .sales__cart-overlay {
   position: relative;
 }
@@ -377,7 +384,7 @@ body {
   display: block;
 }
 
-.sales__cart-shoes:hover .shoes__text {
+.sales__cart-shoes:hover .sales__text {
   display: block;
 }
 
@@ -393,18 +400,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /*Затемнение Products--------*/
+  /*---------------------------------*/
 }
 
 .products__title {
   font-size: 30px;
-  font-weight: 400;
   line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .products__subtitle {
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   margin: 0 0 18px 0;
   color: #5D5D5D;
 }
@@ -427,12 +438,11 @@ body {
   position: relative;
 }
 
-/*Затемнение Products--------*/
 .products__item-wrapper {
   position: relative;
 }
 
-.overlay {
+.products .overlay {
   width: 100%;
   height: 420px;
   background: rgba(0, 0, 0, 0.2);
@@ -440,8 +450,8 @@ body {
   top: 0;
 }
 
-.overlay,
-.products__button {
+.products .overlay,
+.products .products__button {
   display: none;
 }
 
@@ -459,8 +469,9 @@ body {
 
 .products__button-text {
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -479,23 +490,24 @@ body {
   display: block;
 }
 
-/*---------------------------------*/
 .products__item-img {
   margin: 0 0 25px 0;
 }
 
 .products__item-title {
   font-size: 13px;
-  font-weight: 400;
   line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
   padding: 0 0 0 18px;
   text-transform: uppercase;
 }
 
 .products__item-text {
   font-size: 14px;
-  font-weight: 300;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
   padding: 13px 28px 18px 18px;
   color: #5D5D5D;
 }
@@ -507,8 +519,9 @@ body {
 
 .products__link {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
   text-decoration: none;
   color: #F09BA7;
   border: 1px solid;
@@ -533,14 +546,16 @@ body {
   fill: red;
 }
 
-.checkout__item-close:active,
-.products__link:active,
-.products__button:active {
+.products__link:active, .products__button:active {
   outline: 1px solid azure;
 }
 
-.white-icon {
+.products .white-icon {
   fill: azure;
+}
+
+.sales {
+  /*-------Затемнение Sales---------*/
 }
 
 .sales__item {
@@ -600,8 +615,9 @@ body {
 
 .sales__item-text {
   font-size: 24px;
-  font-weight: 700;
   line-height: 29px;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   color: #F09BA7;
 }
@@ -610,7 +626,6 @@ body {
   padding: 0 0 56px 0;
 }
 
-/*-------Затемнение Sales---------*/
 .sales__cart-overlay {
   position: relative;
 }
@@ -653,7 +668,7 @@ body {
   display: block;
 }
 
-.sales__cart-shoes:hover .shoes__text {
+.sales__cart-shoes:hover .sales__text {
   display: block;
 }
 
@@ -692,8 +707,9 @@ body {
 
 .service__item-title {
   font-size: 20px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
   padding: 28px 0 0 0;
   color: #FBFBFB;
   text-align: center;
@@ -701,8 +717,9 @@ body {
 
 .service__item-text {
   font-size: 14px;
-  font-weight: 300;
   line-height: 24px;
+  font-weight: 300;
+  font-style: normal;
   padding: 28px 0 0 0;
   color: #FBFBFB;
   padding: 16px 0 0 0;
@@ -750,16 +767,18 @@ body {
 
 .footer__form-text {
   font-size: 24px;
-  font-weight: 700;
   line-height: 38px;
+  font-weight: 700;
+  font-style: normal;
   text-align: center;
   text-transform: uppercase;
 }
 
 .footer__form-subtext {
   font-size: 18px;
-  font-weight: 400;
   line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   text-transform: uppercase;
 }
@@ -809,10 +828,11 @@ body {
 }
 
 .footer__social-brand {
-  color: #FBFBFB;
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #FBFBFB;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -898,8 +918,9 @@ body {
 
 .reg__title {
   font-size: 24px;
-  font-weight: 400;
   line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
   color: #F09BA7;
   text-transform: uppercase;
   -ms-flex-item-align: center;
@@ -919,8 +940,9 @@ body {
 
 .field__title {
   font-size: 16px;
-  font-weight: 300;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
   padding: 0 0 0 0;
 }
 
@@ -951,8 +973,9 @@ body {
 .field__text {
   max-width: 360px;
   font-size: 13px;
-  font-weight: 300;
   line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
   margin: 15px 0 39px 0;
   color: #B1B1B1;
 }
@@ -977,6 +1000,10 @@ body {
   background-color: #5D5D5D;
 }
 
+.field__btn:active {
+  outline: 2px solid #5D5D5D;
+}
+
 .field__item {
   position: relative;
   padding: 0 0 27px 25px;
@@ -996,16 +1023,18 @@ body {
 
 .field__list-title {
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
   text-transform: uppercase;
 }
 
 .field__list-subtitle {
   max-width: 720px;
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
   padding: 22px 0 27px 0;
 }
 
@@ -1024,8 +1053,9 @@ body {
 
 .cart__title {
   font-size: 24px;
-  font-weight: 400;
   line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
   color: #F09BA7;
   text-transform: uppercase;
   -ms-flex-item-align: center;
@@ -1075,18 +1105,20 @@ body {
 }
 
 .checkout__title {
-  width: 200px;
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  width: 200px;
   text-transform: uppercase;
   padding: 22px 0 42px 32px;
 }
 
 .checkout__subtitle {
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
   padding: 0 0 6px 32px;
 }
 
@@ -1096,8 +1128,9 @@ body {
 
 .checkout__field-title {
   font-size: 16px;
-  font-weight: 300;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
   padding: 0 0 0 0;
   text-transform: uppercase;
 }
@@ -1218,8 +1251,9 @@ body {
 
 .checkout__sub-total {
   font-size: 11px;
-  font-weight: 400;
   line-height: 13px;
+  font-weight: 400;
+  font-style: normal;
   padding: 0 34px 12px 0;
   text-align: end;
   text-transform: uppercase;
@@ -1227,8 +1261,9 @@ body {
 
 .checkout__grand-total {
   font-size: 16px;
-  font-weight: 00;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
   padding: 0 34px 21px 0;
   text-align: end;
   text-transform: uppercase;
