@@ -4,7 +4,6 @@
     width: 100%;
     background-repeat: no-repeat;
 
-
     &__img {
         width: 360px;
         display: flex;
@@ -28,9 +27,6 @@
 
     &__form-text {
         @include font(24px,38px,700,normal);
-        //font-size: 24px;
-        //font-weight: 700;
-        //line-height: 38px;
         text-align: center;
         text-transform: uppercase;
 
@@ -38,9 +34,6 @@
 
     &__form-subtext {
         @include font(18px,22px,400,normal);
-        //font-size: 18px;
-        //font-weight: 400;
-        //line-height: 22px;
         text-align: center;
         text-transform: uppercase;
     }
@@ -88,9 +81,6 @@
     &__social-brand {
         @include font(16px,19px,400,normal);
         color: $white-color;
-        //font-size: 16px;
-        //font-weight: 400;
-        //line-height: 19px;
         align-self: center;
     }
 
