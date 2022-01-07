@@ -1,0 +1,116 @@
+.header {
+    background-color:$black;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+
+    &__wrp {
+        @include flex-between;
+    }
+
+    &__wrapper {
+        display: flex
+    }
+
+    &__logo-form-wrp {
+    @include flex-center;
+    }
+
+    &__search {
+        display: flex;
+        margin: 0 0 0 41px;
+    }
+
+    &__search-btn {
+        background: transparent;
+        border: none;
+    }
+
+    &__search-form {
+        margin: 0 0 0 5px;
+        height: 40px;
+    }
+        
+    &__menu {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        align-self: center;
+        top: 0px;
+        right: 0px;
+    }
+
+    &__menu-btn {
+        border: none;
+        background-color: transparent;
+    }
+
+    &__link-reg {
+        text-decoration: none;
+        margin: 0 0 0 33px;
+    }
+
+    &__link-basket {
+        text-decoration: none;
+        margin: 0 0 0 33px;
+    }
+
+    &__nav {
+        position: absolute;
+        width: 232px;
+        height: 729px;
+        top: 181%;
+        left: 168px;
+        background: white;
+        display:none;
+        z-index: 100;
+        padding: 37px 0 0 0;
+    }
+
+    &__nav-item {
+        padding: 0 0 11px 0;
+        margin: 0 0 0 33px;
+    }
+    
+    &__nav-title {
+        font-weight: 700;
+        padding: 0 0 12px 0;
+        margin: 0 0 0 33px;
+        text-transform: uppercase;
+    }
+
+    &__sub-item-title {
+        padding: 0 0 12px 0;
+        color: $pink-color;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__sub-link {
+        margin: 0 0 0 55px;
+        line-height: 35px;
+        color: $gray-color;
+        text-decoration: none;
+    }
+}
+
+.display-block {
+    display: block;
+}
+
+
+.header__search-btn:hover .white-icon,
+.header__search-btn:hover .white-icon,
+.header__menu-btn:hover .white-icon,
+.header__link-reg:hover .white-icon,
+.header__link-basket:hover .white-icon {
+    fill: red;
+}
+
+.header__search-btn:active,
+.header__menu-btn:active,
+.header__link-reg:active,
+.header__link-basket:active {
+    outline: 1px solid azure;
+}
+

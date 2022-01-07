@@ -19,7 +19,7 @@
         <div class="header__wrp container">
             <!--logo.svg-->
             <div class="header__logo-form-wrp">
-                <a class="header__logo" href="#">
+                <a class="header__logo" href="index.html">
                     <svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="44" height="38" fill="url(#pattern0)" />
@@ -148,61 +148,71 @@
     <!--Main-->
 
     <main>
-        <section class="reg">
-            <h1 class="reg__title container">registration</h1>
+        <section class="cart">
+            <h1 class="cart__title container">shoping cart</h1>
         </section>
 
-        <section class="field container">
-            <h2 class="visually-hidden">field</h2>
-            <div>
-                <fieldset>
-                    <legend class="field__title">Your name</legend>
-                    <input class="field__input" id="first-name" type="first-name" required placeholder="First Name">
-                    <label class="visually-hidden" for="first-name">First Name</label>
-                    <input class="field__input" id="last-name" type="last-name" required placeholder="Last Name">
-                    <label class="visually-hidden" for="last-name">Last Name</label>
-                </fieldset>
-
-                <div class="field__radio">
-                    <input type="radio" id="contactChoice1" name="contact" value="male">
-                    <label class="field__radio-label" for="contactChoicel">Male</label>
-                    <input type="radio" id="contactChoice2" name="contact" value="female">
-                    <label class="field__radio-label" for="contactChoicel">Female</label>
+        <section class="checkout container">
+            <h1 class="visually-hidden">checkout-page</h1>
+            <ul class="checkout__list">
+                <li class="checkout__item">
+                    <img><svg class="checkout__item-close" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
+                        </svg>
+                        </img>
+                    <img src="./img/product-8.jpg" alt="product-8">
+                    <div class="checkout__text-wrp">
+                    <h3 class="checkout__title">mango people t-shirt</h3>
+                    <p class="checkout__subtitle">Price:<span  class="checkout__subtitle-price"> $300</span></p>
+                    <p class="checkout__subtitle">Color: Red</p>
+                    <p class="checkout__subtitle">Size: XI</p>
+                    <p class="checkout__subtitle">Quantity:<span class="checkout__subtitle-number">2</span></p>
                 </div>
+                </li>
 
-                <form class="field__form" action="#">
-                    <fieldset>
-                        <legend class="field__title">Login details</legend>
-                        <input class="field__input" id="email" type="field-email" required placeholder="Email">
-                        <label class="visually-hidden" for="email">Email</label>
-                        <input class="field__input" id="password" type="password" required placeholder="Password">
-                        <label class="visually-hidden" for="password">Password</label>
-                    </fieldset>
-                    <p class="field__text">Please use 8 or more characters, with at least 1 number and a mixture of
-                        uppercase and lowercase
-                        letters
-                    </p>
-                    <button class="field__btn" type="submit">join now</button>
-                </form>
-            </div>
+                <li class="checkout__item">
+                    <img><svg class="checkout__item-close" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
+                        </svg>
+                        </img>
+                    <img src="./img/product-7.jpg" alt="product-7">
+                    <div class="checkout__text-wrp">
+                    <h3 class="checkout__title">mango people t-shirt</h3>
+                    <p class="checkout__subtitle">Price:<span  class="checkout__subtitle-price"> $300</span></p>
+                    <p class="checkout__subtitle">Color: Red</p>
+                    <p class="checkout__subtitle">Size: XI</p>
+                    <p class="checkout__subtitle">Quantity:<span class="checkout__subtitle-number">2</span></p>
+                    </div>
+                </li>
+            </ul>
 
+            <div class="checkout__field-wrp">
+                <form class="checkout__form" action="#">
+                <fieldset>
+                    <legend class="checkout__field-title">shipping adress</legend>
+                    <input class="checkout__field-input" id="adress" type="adress" required placeholder="Adress">
+                    <label class="visually-hidden" for="adress">Adress</label>
+                    <input class="checkout__field-input" id="state" type="state" required placeholder="State">
+                    <label class="visually-hidden" for="state">State</label>
+                    <input class="checkout__field-input" id="postcode" type="postcode" required placeholder="Postcode / Zip">
+                    <label class="visually-hidden" for="postcode">Postcode</label>
+                </fieldset>
+                <button class="checkout__field-btn" type="submit">get a quote</button>
+            </form>
+                <ul class="checkout__total-list">
+                <li><p class="checkout__sub-total">sub total $900</p></li>
+                <li><p class="checkout__grand-total">grand total<span class="checkout__total-price">$900</span></p></li>
+                <hr>
+                <li class="checkout__item-btn"><button class="checkout__proceed-btn" type="submit">proceed to checkout</button></li>
+            </ul>
             <div>
-                <h2 class="field__list-title">loyalty has its perks</h2>
-                <p class="field__list-subtitle">Get in on the loyalty program where you can earn points and unlock
-                    serious
-                    perks.
-                    Starting with
-                    these
-                    as soon as you join:</p>
-                <ul class="field__list">
-                    <li class="field__item">15% off welcome offer</li>
-                    <li class="field__item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="field__item">$10 off a purchase on your birthday</li>
-                    <li class="field__item">Early access to products</li>
-                    <li class="field__item">Exclusive offers & rewards</li>
-                </ul>
-            </div>
         </section>
+        <div class="container">
+            <ul class="checkout__field-btn-wrp">
+                <li><button class="checkout__field-btn-next" type="submit">clear shopping cart</button></li>
+                <li><button class="checkout__field-btn-next" type="submit">continue shopping</button></li> 
+            </ul>
+        </div>
     </main>
 
     <!--Footer-->

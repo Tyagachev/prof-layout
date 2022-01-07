@@ -1,0 +1,13 @@
+.cart {
+    height: 148px;
+    background-color:#F8F3F4;
+    display: flex;
+    margin: 0 0 96px 0;
+
+    &__title {
+        @include font(24px,29px,400, normal);
+        color: $pink-color;
+        text-transform: uppercase;
+        align-self: center;
+    }
+}
