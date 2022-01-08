@@ -39,7 +39,6 @@
         position: relative;
         display: flex;
         min-width: 100%;
-        
     }
 
     &__overlay:before {
@@ -59,4 +58,3 @@
 .brand:hover .brand__overlay:before {
     display: block;
 }
-    /*----------------*/
