@@ -1,0 +1,14 @@
+/*Registration*/
+
+.reg {
+    height: 148px;
+    background-color:#F8F3F4;
+    display: flex;
+
+    &__title {
+        @include font(24px,29px,400);
+        color: $pink-color;
+        text-transform: uppercase;
+        align-self: center;
+    }
+}
