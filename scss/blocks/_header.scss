@@ -13,7 +13,7 @@
     }
 
     &__logo-form-wrp {
-    @include flex-center;
+        @include flex-center; 
     }
 
     &__search {
@@ -114,3 +114,18 @@
     outline: 1px solid azure;
 }
 
+@media (max-width: $tablet-width) {
+    .header__logo-form-wrp {
+        margin: 0 0 0 16px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header__logo-form-wrp {
+        margin: 0;
+    }
+
+    .header__link {
+        display: none;
+    }
+}
