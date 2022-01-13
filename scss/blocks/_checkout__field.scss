@@ -32,20 +32,6 @@
         padding: 0 0 0 10px;
     }
 
-    &__subtitle-number {
-        position: absolute;
-        color: $gray-color;
-        width: 43px;
-        height: 24px;
-        left: 100px;
-        bottom: 5px;
-        font-size: 18px;
-        text-align: center;
-        display: block;
-        border: 1px solid;
-        margin: 0 0 0 40px;
-    }
-
     &__item-btn {
         display: flex;
         justify-content: center;
@@ -82,11 +68,38 @@
         margin: 24px 0 0 0;
     }
 
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__field-wrp {
+        @include tablet {
+            display: flex;
+            align-items: center;
+            margin: 0 0 150px 0;
+            
+        }
+
+        
+        @include mobile {
+            flex-direction: column;
+            margin: 0 0 96px 0;
+        }
+
+    }
+
     &__field-btn-wrp {
         display: flex;
         justify-content: space-between;
         max-width: 652px;
         margin: 0 0 128px 0;
+
+        @include tablet {
+            margin: 0 0 64px 0;
+            justify-content: space-around;
+            
+        }
     }
 
     &__field-btn-next {
@@ -97,30 +110,10 @@
         text-transform: uppercase;
         color: gray;
         background-color: transparent;
-    }
 
-    &__total-list {
-        width: 360px;
-        height: 214px;
-        background-color: #F5F3F3;
-        margin: 57px 0 0 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include mobile {
+            max-width: 175px;
+            height: 33px;
+        }
     }
-
-    &__sub-total {
-        @include font(11px,13px,400);
-        padding: 0 34px 12px 0;
-        text-align: end;
-        text-transform: uppercase;
-    }
-
-    &__grand-total {
-        @include font(16px,19px,400);
-        padding: 0 34px 21px 0;
-        text-align: end;
-        text-transform: uppercase;
-    }
-
 }

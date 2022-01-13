@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
     /*border: 1px solid green;*/
 }
@@ -53,13 +53,13 @@ body {
 
 @media (max-width: $tablet-width) {
     .container {
-        width: 736px;
+        width: 96%;
     }
 }
 
 @media (max-width: $mobile-width) {
     .container {
-        width: 375px;
+        width: 91%;
     }
 }
 

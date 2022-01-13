@@ -5,7 +5,7 @@
         object-fit: cover;
         @include tablet {
             width: 50%;
-            min-height: 367px;
+            height: 367px;
         }
 
         @include mobile {
@@ -22,7 +22,7 @@
 
         @include mobile {
             min-height: 363px;
-            padding: 0 0 0 83px;
+            padding: 0;
         }
     }
 
@@ -33,6 +33,7 @@
         }
         @include mobile{
             @include font (38px, 45px, 900);
+            margin: 0 auto;
         }
         text-transform: uppercase;
         position: relative;

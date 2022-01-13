@@ -48,11 +48,19 @@
     &__link-reg {
         text-decoration: none;
         margin: 0 0 0 33px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__link-basket {
         text-decoration: none;
         margin: 0 0 0 33px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__nav {
@@ -97,7 +105,6 @@
 .display-block {
     display: block;
 }
-
 
 .header__search-btn:hover .white-icon,
 .header__search-btn:hover .white-icon,

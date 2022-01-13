@@ -8,10 +8,19 @@
     &__list {
         display: flex;
         justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item {
         width: 360px;
+
+        @include tablet {
+            padding: 48px 0 48px 0;
+        }
     }
 
     &__item-img {
@@ -33,5 +42,4 @@
         padding: 16px 0 0 0;
         text-align: center;
     }
-
 }
