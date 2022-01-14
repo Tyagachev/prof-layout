@@ -11,12 +11,16 @@
     }
 
     &__field-input {
-        min-width: 360px;
+        width: 360px;
         height: 45px;
         padding: 0 0 0 16px;
         margin: 20px 0 0 0;
         opacity: 0.7;
         outline-color: $gray-color;
+
+        @include mobile {
+            width: 273px;
+        }
     }
 
     &__subtitle {
@@ -30,20 +34,6 @@
     &__total-price {
         color: $pink-color;
         padding: 0 0 0 10px;
-    }
-
-    &__subtitle-number {
-        position: absolute;
-        color: $gray-color;
-        width: 43px;
-        height: 24px;
-        left: 100px;
-        bottom: 5px;
-        font-size: 18px;
-        text-align: center;
-        display: block;
-        border: 1px solid;
-        margin: 0 0 0 40px;
     }
 
     &__item-btn {
@@ -82,11 +72,9 @@
         margin: 24px 0 0 0;
     }
 
-    &__field-btn-wrp {
+    @include tablet {
         display: flex;
         justify-content: space-between;
-        max-width: 652px;
-        margin: 0 0 128px 0;
     }
 
     &__field-btn-next {
@@ -97,30 +85,37 @@
         text-transform: uppercase;
         color: gray;
         background-color: transparent;
+
+        @include mobile {
+            width: 100%;
+            height: 33px;
+        }
     }
 
-    &__total-list {
-        width: 360px;
-        height: 214px;
-        background-color: #F5F3F3;
-        margin: 57px 0 0 0;
+    &__field-wrp {
+        @include tablet {
+            display: flex;
+            align-items: center;
+            margin: 0 auto 128px;
+            
+        }
+
+        @include mobile {
+            flex-direction: column;
+            margin: 0 0 96px 0;
+        }
+    }
+
+    &__field-btn-wrp {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+        justify-content: space-between;
+        max-width: 652px;
+        margin: 0 0 128px 0;
 
-    &__sub-total {
-        @include font(11px,13px,400);
-        padding: 0 34px 12px 0;
-        text-align: end;
-        text-transform: uppercase;
+        @include tablet {
+            margin: 0 0 64px 0;
+            justify-content: space-around;
+            
+        }
     }
-
-    &__grand-total {
-        @include font(16px,19px,400);
-        padding: 0 34px 21px 0;
-        text-align: end;
-        text-transform: uppercase;
-    }
-
 }

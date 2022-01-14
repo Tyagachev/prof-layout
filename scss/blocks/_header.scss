@@ -13,7 +13,7 @@
     }
 
     &__logo-form-wrp {
-    @include flex-center;
+        @include flex-center; 
     }
 
     &__search {
@@ -48,11 +48,19 @@
     &__link-reg {
         text-decoration: none;
         margin: 0 0 0 33px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__link-basket {
         text-decoration: none;
         margin: 0 0 0 33px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__nav {
@@ -98,7 +106,6 @@
     display: block;
 }
 
-
 .header__search-btn:hover .white-icon,
 .header__search-btn:hover .white-icon,
 .header__menu-btn:hover .white-icon,
@@ -114,3 +121,18 @@
     outline: 1px solid azure;
 }
 
+@media (max-width: $tablet-width) {
+    .header__logo-form-wrp {
+        margin: 0 0 0 16px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header__logo-form-wrp {
+        margin: 0;
+    }
+
+    .header__link {
+        display: none;
+    }
+}
