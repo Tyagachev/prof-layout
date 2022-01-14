@@ -10,5 +10,9 @@
         color: $pink-color;
         text-transform: uppercase;
         align-self: center;
+
+        @include mobile {
+            text-align: center;
+        }
     }
 }
