@@ -5,7 +5,6 @@
         object-fit: cover;
         @include tablet {
             width: 50%;
-            height: 367px;
         }
 
         @include mobile {

@@ -13,7 +13,7 @@
     }
 
     &__input {
-        max-width: 96%;
+        width: 90%;
         height: 45px;
         padding: 0 0 0 16px;
         margin: 20px 125px 0 0;
@@ -37,8 +37,7 @@
     }
 
     &__radio-other {
-        display: none;
-
+        display: flex;
         @include tablet {
             display: flex;
 
@@ -47,7 +46,6 @@
         @include mobile {
             display: flex;
         }
-
     }
 
     &__form {
@@ -138,5 +136,4 @@
     &__list {
         margin: 0 0 0 15px;
     }
-
 }

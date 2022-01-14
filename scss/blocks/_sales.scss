@@ -21,8 +21,6 @@
         }
     }
 
-
-
     &__item--woman {
         background-image: url(../img/for-women.jpg);
         background-repeat: no-repeat;
@@ -36,6 +34,10 @@
     &__item--kids {
         background-image: url(../img/for-kids.jpg);
         background-repeat: no-repeat;
+
+        @include mobile {
+            margin: 0 0 32px 0;
+        }
     }
 
     &__item--shoes {
@@ -45,8 +47,8 @@
         background-repeat: no-repeat;
 
         @include mobile {
-            width: 100%;
-            margin: 30px 0 0 0;
+            min-width: 343px;
+            margin: 0 auto;
         }
     }
 
