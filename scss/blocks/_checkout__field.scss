@@ -100,12 +100,10 @@
             
         }
 
-        
         @include mobile {
             flex-direction: column;
             margin: 0 0 96px 0;
         }
-
     }
 
     &__field-btn-wrp {
@@ -120,5 +118,4 @@
             
         }
     }
-
 }

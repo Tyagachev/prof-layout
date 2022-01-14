@@ -1613,8 +1613,6 @@ body {
   width: 200px;
   text-transform: uppercase;
   padding: 22px 0 42px 32px;
-  width: 130px;
-  padding: 13px 0 42px 17px;
 }
 
 @media (max-width: 767px) {
@@ -1623,6 +1621,7 @@ body {
     line-height: 29px;
     font-weight: 400;
     font-style: normal;
+    width: 130px;
     padding: 13px 0 25px 17px;
   }
 }
@@ -1633,7 +1632,6 @@ body {
   font-weight: 400;
   font-style: normal;
   padding: 0 0 6px 32px;
-  padding: 0 0 6px 17px;
 }
 
 @media (max-width: 767px) {
@@ -1642,6 +1640,7 @@ body {
     line-height: 16px;
     font-weight: 400;
     font-style: normal;
+    padding: 0 0 6px 17px;
   }
 }
 
