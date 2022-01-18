@@ -2,8 +2,17 @@
     height: 148px;
     background-color:#F8F3F4;
     display: flex;
-    justify-content: space-between;
 
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile{
+            @include font (10px, 12px, 400);
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 
     &__title {
         @include font(24px,29px,400);
@@ -15,6 +24,10 @@
     &__list {
         display: flex;
         align-self: center;
+
+        @include mobile{
+            margin: 32px 0 0 0;
+        }
     }
 
     &__item {
