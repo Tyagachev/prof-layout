@@ -1,0 +1,52 @@
+.arrivals {
+    height: 148px;
+    background-color:#F8F3F4;
+    display: flex;
+
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile{
+            @include font (10px, 12px, 400);
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        @include font(24px,29px,400);
+        color: $pink-color;
+        text-transform: uppercase;
+        align-self: center;
+    }
+
+    &__list {
+        display: flex;
+        align-self: center;
+
+        @include mobile{
+            margin: 32px 0 0 0;
+        }
+    }
+
+    &__item {
+        text-decoration: none;
+        padding: 0 0 0 4px;
+    }
+
+    &__link {
+        text-decoration: none
+    }
+
+    &__item-color {
+        @include font(14px,17px,300);
+        text-transform: uppercase;
+        color: $gray-color;
+    }
+
+    &__item-color:hover {
+        color: $pink-color;
+    }
+}
+
