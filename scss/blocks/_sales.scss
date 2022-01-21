@@ -47,8 +47,9 @@
         background-repeat: no-repeat;
 
         @include mobile {
-            min-width: 343px;
+            //min-width: 343px;
             margin: 0 auto;
+            min-width: 100%;
         }
     }
 

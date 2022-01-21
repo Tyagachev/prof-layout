@@ -529,8 +529,8 @@ body {
 
 @media (max-width: 767px) {
   .sales__item--shoes {
-    min-width: 343px;
     margin: 0 auto;
+    min-width: 100%;
   }
 }
 
@@ -869,8 +869,8 @@ body {
 
 @media (max-width: 767px) {
   .sales__item--shoes {
-    min-width: 343px;
     margin: 0 auto;
+    min-width: 100%;
   }
 }
 
@@ -1155,17 +1155,19 @@ body {
 
 .footer__form-input {
   border-radius: 200px 0px 0px 200px;
-  background-color: #E1E1E1;
+  background-color: #5D5D5D;
+  opacity: 0.3;
   height: 49px;
   width: 322px;
   padding: 0 0 0 22px;
   margin: 32px 0 0 0;
+  color: transparent;
 }
 
 .footer__form-btn {
   border-radius: 0px 200px 200px 0px;
   background-color: #F09BA7;
-  color: #fff;
+  color: #FBFBFB;
   width: 100px;
   height: 49px;
   border: none;
@@ -1276,7 +1278,6 @@ body {
 [type="number"] {
   display: block;
   outline: 1px solid;
-  background: transparent;
   border: none;
   opacity: 0.5;
 }
@@ -1292,6 +1293,14 @@ body {
 [type="search"]:hover,
 [type="search"]:focus {
   outline: 0.5px solid red;
+}
+
+[type="search"]::-webkit-input-placeholder {
+  color: black;
+}
+
+[type="email"]::-webkit-input-placeholder {
+  color: #FBFBFB;
 }
 
 /*Registration*/
