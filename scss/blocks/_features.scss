@@ -84,6 +84,7 @@
         align-items: center;
         justify-content: center;
         border: 1px solid $pink-color;
+        transition: background-color 0.5s linear;
     }
 
     &__button-text {
@@ -92,6 +93,7 @@
     }
 
     &__btn:hover {
+        border-color: white;
         background-color: $gray-color;
     }
 

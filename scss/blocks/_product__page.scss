@@ -51,22 +51,16 @@
         width: 100%;
     }
 
-    &-button {
-        position: absolute;
-        top: 50%;  
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: transparent;
-        color: #fff;
-        padding: 13px  13px;
-        border: none;
+    .overlay,
+    .product__pages-button {
+        display: none;
     }
 
-    &-button:hover {
+    &__button:hover {
         color: red;
     }
 
-    &-button:hover .white-icon {
+    &__button:hover .white-icon {
         fill: red;
     }
 
@@ -77,11 +71,11 @@
         text-decoration: none;
     }
 
-    &-button:hover .white-icon {
+    &__button:hover .white-icon {
         fill: red;
     }
 
-    &-button:active {
+    &__button:active {
         outline: 1px solid azure;
     }
 

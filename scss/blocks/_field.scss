@@ -70,6 +70,7 @@
         background-color: $pink-color;
         color: $white-color;
         text-transform: uppercase;
+        transition: background-color 0.5s linear;
         border: none;
 
         @include mobile {
