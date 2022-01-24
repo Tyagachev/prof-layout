@@ -3788,8 +3788,7 @@ textarea.form-control-lg {
 .dropdown-menu-dark {
   color: #dee2e6;
   background-color: transparent;
-  border-color:#F09BA7;
-  ;
+  /*border-color:#F09BA7;*/
 }
 .dropdown-menu-dark .dropdown-item {
   color: #000;
