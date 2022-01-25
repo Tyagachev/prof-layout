@@ -1,23 +1,26 @@
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    grid-row-gap:30px;
-    grid-column-gap:30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap:20px;
+    grid-column-gap:20px;
+    justify-items: stretch;
+    
+    
 
 
     grid-template-areas: 
-    'gallery__img-1 gallery__img-2 gallery__img-3'
+    'gallery__img-1  gallery__img-2 gallery__img-3'
     'gallery__img-4  gallery__img-5 gallery__img-6'
     'gallery__img-7  gallery__img-8 gallery__img-9'
     ;
 
     @include tablet {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
-    'gallery__img-1 gallery__img-2 gallery__img-3 '
-    'gallery__img-4  gallery__img-5 gallery__img-6'
-    'gallery__img-7  gallery__img-8 gallery__img-9'
+    'gallery__img-1  gallery__img-2  gallery__img-3'
+    'gallery__img-4  gallery__img-5  gallery__img-6'
+    'gallery__img-7  gallery__img-8  gallery__img-9'
     ;
     }
 
