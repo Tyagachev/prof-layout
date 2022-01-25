@@ -1,0 +1,69 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    grid-row-gap:30px;
+    grid-column-gap:30px;
+
+
+    grid-template-areas: 
+    'gallery__img-1 gallery__img-2 gallery__img-3'
+    'gallery__img-4  gallery__img-5 gallery__img-6'
+    'gallery__img-7  gallery__img-8 gallery__img-9'
+    ;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+    'gallery__img-1 gallery__img-2 gallery__img-3 '
+    'gallery__img-4  gallery__img-5 gallery__img-6'
+    'gallery__img-7  gallery__img-8 gallery__img-9'
+    ;
+    }
+
+
+    &__img {
+        max-width: 360px;
+        background-color: #F8F8F8;
+
+    }
+
+    &__img-1 {
+        grid-area: gallery__img-1;
+
+    }
+
+    &__img-2 {
+        grid-area: gallery__img-2;
+    }
+
+    &__img-3 {
+        grid-area: gallery__img-3;
+    }
+
+    &__img-4 {
+        grid-area: gallery__img-4;
+    }
+
+    &__img-5 {
+        grid-area: gallery__img-5;
+    }
+
+    &__img-6 {
+        grid-area: gallery__img-6;
+    }
+
+    &__img-7 {
+        grid-area: gallery__img-7;
+    }
+
+    &__img-8 {
+        grid-area: gallery__img-8;
+    }
+
+    &__img-9 {
+        grid-area: gallery__img-9;
+    }
+
+
+}
