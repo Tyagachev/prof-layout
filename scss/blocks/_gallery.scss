@@ -9,7 +9,9 @@
     grid-column-gap:20px;
 
     grid-template-areas: 
-        'img-1';
+        'img-1 img-2 img-3'
+        'img-4 img-5 img-6'
+        'img-7 img-8 img-9';
 }
 
     &__img {
@@ -25,7 +27,7 @@
 
     }
 
-    /*&__img-2 {
+    &__img-2 {
         max-width: 360px;
         grid-area: img-2;
     }
@@ -63,5 +65,5 @@
     &__img-9 {
         max-width: 360px;
         grid-area: img-9;
-    }*/
+    }
 }
