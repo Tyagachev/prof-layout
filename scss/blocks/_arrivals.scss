@@ -3,6 +3,10 @@
     background-color:#F8F3F4;
     display: flex;
 
+    &__nav {
+        display: flex;
+    }
+
     &__wrp {
         display: flex;
         justify-content: space-between;
@@ -11,6 +15,7 @@
             @include font (10px, 12px, 400);
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
     }
 

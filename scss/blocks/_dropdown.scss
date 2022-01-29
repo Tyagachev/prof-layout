@@ -14,3 +14,8 @@
         @include font (10px, 12px, 400);
     }
 }
+
+.dropdown-menu-text {
+    display: flex;
+    align-items: center;
+}
